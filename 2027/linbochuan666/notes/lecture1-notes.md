@@ -1,5 +1,5 @@
 # 27赛季DynamicX第一节培训课笔记 
->内容：Linux、 Vim && Shell、Git && GitHub、本人的笔记
+>内容：Linux、 Vim && Shell、Git && GitHub、本人的C/C++笔记
 ## Linux 基础
 - ***Windows,macOS与Linux***  
   - Windows ：常见于个人桌面。软件、游戏生态丰富   
