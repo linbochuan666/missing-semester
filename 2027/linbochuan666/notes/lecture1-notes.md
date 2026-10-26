@@ -227,6 +227,7 @@
                                                          ⬇️
   (GitHub协作)Merge到团队仓库 ⬅️ Review评审 ⬅️ 发起PR ⬅️ 个人Fork接收提交  
   ```
+  
 
 - ***一次团队贡献的完整过程***
   - 现在可以把Linux环境、终端操作和团队协作串起来
@@ -236,6 +237,29 @@
   进入开发环境    定位与操作文件   编辑文件内容   分支、暂存与提交  PR、评审与合并
   ```
   - **Git记录版本，GitHub支持协作。**
+
+
+  ### 用vscode来PR   
+  ```bash
+  先进要推送的仓库
+  # 1.添加这一个MD文件到缓存区
+  git add 2027/linbochuan666/notes/cmake_study.md
+  # 2.提交这个文件
+  git commit -m "Update cmake_study.md homework"
+  # 3.推送到GitHub
+  git push
+  ```
+  ## 对之前的commit进行修改
+  - 交第二次作业的时候没太注意，没按照之前要求的commit格式提交，于是问了ai并尝试，现在又回来记录一点笔记
+  - 
+    ```bash
+    # 1.把这四次提交撤回，变成一次待提交状态
+    git reset --soft HEAD~4
+    # 2.重新提交
+    git commit -m "Update cmake_study.md homework."
+    # 3.强制推送，覆盖掉之前PR的四个不合规记录
+    git push -f
+    ```
   ---
  
 
@@ -571,5 +595,5 @@
 - 赋值：[struct] 结构体名 变量 = { ... };
 - 访问成员：结构体变量.成员名;
 
-（以上是将手写笔记传到ai生成之后我再整理的）
+（以上C/C++部分是将手写笔记传到ai生成之后我再整理的）
 
